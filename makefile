@@ -1,21 +1,21 @@
 alice:
-	  ./target/release/parachain-template-node \
-		--alice \
-		--collator \
-		--force-authoring \
-		--chain rococo-local-parachain-2000-raw.json \
-		--base-path /tmp/parachain/alice \
-		--port 30340  \
-		--ws-port 9950 \
-		--rpc-cors=all \
-		--rpc-methods=Unsafe \
-		-- \
-		--execution wasm \
-		--chain rococo_local.json \
-		--telemetry-url 'wss://telemetry.polkadot.io/submit/ 0' \
-		--validator \
-		--rpc-methods Unsafe \
-		--name kinergy \
+   ./target/release/parachain-template-node \
+   --alice \
+   --collator \
+   --force-authoring \
+   --chain rococo-local-parachain-2000-raw.json \
+   --base-path /tmp/parachain/alice \
+   --port 30340  \
+   --ws-port 9950 \
+   --rpc-cors=all \
+   --rpc-methods=Unsafe \
+   -- \
+   --execution wasm \
+   --chain rococo_local.json \
+   --telemetry-url 'wss://telemetry.polkadot.io/submit/ 0' \
+   --validator \
+   --rpc-methods Unsafe \
+   --name kinergy \
 
 
 wasm:
